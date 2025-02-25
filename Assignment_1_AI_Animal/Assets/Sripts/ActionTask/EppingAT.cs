@@ -21,12 +21,15 @@ namespace NodeCanvas.Tasks.Actions
 
         protected override void OnUpdate()
         {
-            energy.value += 10;
+            energy.value += 10 * Time.deltaTime;
         }
 
         protected override void OnExecute()
         {
-            EndAction(true);
+            if (energy.value >= 120)
+            {
+                EndAction(true);
+            }
         }
     }
 }

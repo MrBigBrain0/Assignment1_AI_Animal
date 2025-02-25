@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
   m_Name: FSM.asset3
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"target":{"_value":1},"speed":{"_value":2.0},"stopDistance":{"_value":0.1},"waitActionFinish":true,"overrideAgent":{"_type":"UnityEngine.Transform","_value":2},"$type":"NodeCanvas.Tasks.Actions.MoveTowards"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":404.0,"y":217.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"energy":{"_name":"energy","_targetVariableID":"9d0fa0db-056e-4244-996d-28e9f30f8922"},"agentBlackboard":3,"$type":"NodeCanvas.Tasks.Actions.EppingAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":590.0,"y":310.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"distance":100.0,"target":{"_name":"CatTree","_targetVariableID":"e2e86017-5c63-4af8-a291-fcf312073c91"},"agentBlackboard":1,"$type":"NodeCanvas.Tasks.Actions.MoveToTarget"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":404.0,"y":217.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"energy":{"_name":"energy","_targetVariableID":"9d0fa0db-056e-4244-996d-28e9f30f8922"},"agentBlackboard":1,"$type":"NodeCanvas.Tasks.Actions.EppingAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":590.0,"y":310.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _objectReferences:
   - {fileID: 0}
-  - {fileID: 1610306322291475616, guid: 5e22e94ccab50024baf893b11f7aac54, type: 3}
-  - {fileID: 5064264202158469986, guid: 64bdbf4ec5473274290f2222c8796c9c, type: 3}
-  - {fileID: 5132210220912494439, guid: 64bdbf4ec5473274290f2222c8796c9c, type: 3}
+  - {fileID: 4261106540776117933, guid: f6d487f02f51c4c47b5a102e6e26eb4c, type: 3}
   _graphSource:
     _version: 3.31
     _category: 

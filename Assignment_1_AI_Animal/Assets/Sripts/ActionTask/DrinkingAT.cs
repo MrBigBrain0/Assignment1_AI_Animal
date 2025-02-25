@@ -22,13 +22,17 @@ namespace NodeCanvas.Tasks.Actions
 
         protected override void OnUpdate()
         {
-            energy.value += 15;
-            drinkCooldown = 60;
+            energy.value += 15 * Time.deltaTime;
+            drinkCooldown.value = 100;
         }
 
         protected override void OnExecute()
         {
-            EndAction(true);
+            if(energy.value >= 120)
+            {
+                EndAction(true);
+            }
+
         }
     }
 }

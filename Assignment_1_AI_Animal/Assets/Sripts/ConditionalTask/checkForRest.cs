@@ -20,7 +20,7 @@ namespace NodeCanvas.Tasks.Conditions
 
 		protected override bool OnCheck() 
 		{
-			if(energy.value >= 150)
+			if(energy.value >= 120)
 			{
                 return true;
             }

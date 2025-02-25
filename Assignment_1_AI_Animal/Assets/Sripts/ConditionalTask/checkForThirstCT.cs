@@ -19,13 +19,13 @@ namespace NodeCanvas.Tasks.Conditions
 
 		protected override bool OnCheck() 
 		{
-			if(energy.value < 100 && drinkCooldown.value <= 0)
+			if(energy.value < 80 && drinkCooldown.value <= 0)
 			{
 				return true;
 			}
 			else
 			{
-                return true;
+                return false;
             }
 			
 		}
