@@ -1,13 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine;
+using System.Collections.Generic;
 
-public class Sound 
+
+[System.Serializable]
+public class Sound
 {
     public enum Type
     {
-        sfx
+        SFX, Music
     }
 
     public string name;
@@ -15,10 +16,10 @@ public class Sound
     public AudioClip clip;
 
     [Range(0f, 1f)]
-    public float volume = 1f;
+    public float volume = 1.0f;
 
-    [Range(0.1f, 3f)]
-    public float pitch = 1f;
+    [Range(0.1f, 3.0f)]
+    public float pitch = 1.0f;
 
     public bool looping;
 
@@ -41,11 +42,12 @@ public class SoundVariant
         variants[randomIndex].source.Play();
     }
 
-    public void stopAllVariants()
+    public void StopAllVariants()
     {
         foreach (Sound variant in variants)
         {
             variant.source.Stop();
         }
     }
+
 }

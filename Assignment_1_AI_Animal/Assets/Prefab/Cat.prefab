@@ -1024,7 +1024,6 @@ GameObject:
   - component: {fileID: 4261106540776117933}
   - component: {fileID: 4472467580282725105}
   - component: {fileID: 6365782857844052177}
-  - component: {fileID: 8384173902114565940}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -1069,7 +1068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_nestedFSM":{"_value":1},"_name":"Wonder","_position":{"x":575.0,"y":239.0},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"0"},{"_nestedFSM":{"_value":2},"_name":"Drinking","_tag":"","_position":{"x":769.0,"y":81.0},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"1"},{"_nestedFSM":{"_value":3},"_name":"Epping","_position":{"x":368.0,"y":370.0},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"2"}],"connections":[{"_condition":{"energy":{"_name":"energy","_targetVariableID":"9d0fa0db-056e-4244-996d-28e9f30f8922"},"drinkCooldown":{"_name":"drinkCooldown","_targetVariableID":"9bf3e845-56c9-4afe-98a6-dd8071e28f85"},"agentblackboard":4,"$type":"NodeCanvas.Tasks.Conditions.checkForThirstCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"energy":{"_name":"energy","_targetVariableID":"9d0fa0db-056e-4244-996d-28e9f30f8922"},"agentBlackboard":4,"$type":"NodeCanvas.Tasks.Conditions.checkForEppy"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"energy":{"_name":"energy","_targetVariableID":"9d0fa0db-056e-4244-996d-28e9f30f8922"},"drinkCooldown":{"_name":"drinkCooldown","_targetVariableID":"9bf3e845-56c9-4afe-98a6-dd8071e28f85"},"agentBlackboard":4,"$type":"NodeCanvas.Tasks.Conditions.checkForHidration"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"energy":{"_name":"energy","_targetVariableID":"9d0fa0db-056e-4244-996d-28e9f30f8922"},"agentBlackboard":4,"$type":"NodeCanvas.Tasks.Conditions.checkForRest"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_nestedFSM":{"_value":1},"_name":"Wonder","_position":{"x":575.0,"y":239.0},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"0"},{"_nestedFSM":{"_value":2},"_name":"Drinking","_tag":"","_position":{"x":769.0,"y":81.0},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"1"},{"_nestedFSM":{"_value":3},"_name":"Epping","_position":{"x":368.0,"y":370.0},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"2"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"MusicName":"Lofi","$type":"NodeCanvas.Tasks.Actions.PlayMusic"}]},"_position":{"x":561.0,"y":-12.0},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[{"_condition":{"energy":{"_name":"energy","_targetVariableID":"9d0fa0db-056e-4244-996d-28e9f30f8922"},"drinkCooldown":{"_name":"drinkCooldown","_targetVariableID":"9bf3e845-56c9-4afe-98a6-dd8071e28f85"},"agentblackboard":4,"$type":"NodeCanvas.Tasks.Conditions.checkForThirstCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"energy":{"_name":"energy","_targetVariableID":"9d0fa0db-056e-4244-996d-28e9f30f8922"},"agentBlackboard":4,"$type":"NodeCanvas.Tasks.Conditions.checkForEppy"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"energy":{"_name":"energy","_targetVariableID":"9d0fa0db-056e-4244-996d-28e9f30f8922"},"drinkCooldown":{"_name":"drinkCooldown","_targetVariableID":"9bf3e845-56c9-4afe-98a6-dd8071e28f85"},"agentBlackboard":4,"$type":"NodeCanvas.Tasks.Conditions.checkForHidration"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"energy":{"_name":"energy","_targetVariableID":"9d0fa0db-056e-4244-996d-28e9f30f8922"},"agentBlackboard":4,"$type":"NodeCanvas.Tasks.Conditions.checkForRest"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 11400000, guid: f0b30cc10f5983746b142e3a9a263ce7, type: 2}
@@ -1171,102 +1170,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!82 &8384173902114565940
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6919621374134580190}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 04e97907ed55e7749b9105b87c6aac0f, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &7553662423729902857
 GameObject:
   m_ObjectHideFlags: 0

@@ -1094,6 +1094,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550218290}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &642471591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 642471593}
+  - component: {fileID: 642471594}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &642471593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642471591}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.38, y: 17.32, z: 2.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &642471594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642471591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b229d6faa9199bc49a902289cf68a9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMasterVolume: 100
+  defaultEffectsVolume: 100
+  sounds:
+  - name: Purring
+    clip: {fileID: 8300000, guid: 04e97907ed55e7749b9105b87c6aac0f, type: 3}
+    volume: 1
+    pitch: 1
+    looping: 1
+    source: {fileID: 0}
+    type: 1
+  - name: Eppying
+    clip: {fileID: 8300000, guid: 5e954f79f26a5ca4792d178f08267905, type: 3}
+    volume: 1
+    pitch: 1
+    looping: 1
+    source: {fileID: 0}
+    type: 0
+  - name: Drinking
+    clip: {fileID: 8300000, guid: 67a1ffbcc98d1cc49ae23cba6789c0ed, type: 3}
+    volume: 1
+    pitch: 1
+    looping: 0
+    source: {fileID: 0}
+    type: 0
+  - name: Lofi
+    clip: {fileID: 8300000, guid: 64e7ed48c7624b448b3eb92aa034a055, type: 3}
+    volume: 1
+    pitch: 1
+    looping: 1
+    source: {fileID: 0}
+    type: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,11 +2814,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3811006323325049934, guid: f6d487f02f51c4c47b5a102e6e26eb4c, type: 3}
       propertyPath: _boundGraphSource._translation.x
-      value: -38
+      value: -365
       objectReference: {fileID: 0}
     - target: {fileID: 3811006323325049934, guid: f6d487f02f51c4c47b5a102e6e26eb4c, type: 3}
       propertyPath: _boundGraphSource._translation.y
-      value: 98
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 4261106540776117933, guid: f6d487f02f51c4c47b5a102e6e26eb4c, type: 3}
       propertyPath: _serializedBlackboard
@@ -3000,3 +3075,4 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1352872853}
   - {fileID: 4386052163451888593}
+  - {fileID: 642471593}
